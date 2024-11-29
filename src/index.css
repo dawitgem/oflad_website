@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto" sans-serif;
+
+}
+
+.group {
+    perspective: 1000px;
+
+}
+
+/* Add this to your styles.css or within the component's CSS module */
+.icon-flip {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.icon-flip:hover {
+    transform: rotateY(180deg);
+}
+
+.navlink_hover {
+    @apply relative inline-block transition duration-200 ease-in-out before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-primary dark:before:bg-primary hover:before:w-full before:transition-all before:duration-300 hover:text-primary
+}
