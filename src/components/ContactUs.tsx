@@ -34,7 +34,7 @@ const ContactUs = () => {
         </body>
       </html>
     `;
-      const response = await fetch('http://localhost:8000/send-email', {
+      const response = await fetch('https://oflad-website.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
