@@ -24,9 +24,12 @@ const Header = () => {
             <div className="w-full  "></div>
             <header className={`flex p-5 border-b border-black/10 w-full flex-wrap  sticky top-0 z-[9999] ${isScrolled ? "bg-slate-50" : "md:bg-transparent bg-slate-50"}  `}>
                 <nav className="flex justify-between items-center w-full">
-                    <a href="/" className="flex flex-col flex-shrink sm:flex-row">
-                        <img src={logo} className="w-10 sm:w-auto object-cover" />
-                        <h1 className={`text-3xl font-bold  sm:mt-5 ${isScrolled ? "text-secondary" : "md:text-white text-secondary"}`}>OFLAD</h1>
+                    <a href="/" className="flex flex-col justify-center ">
+                        <div className="flex flex-col flex-shrink sm:flex-row">
+                            <img src={logo} className="w-10 sm:w-auto object-cover" />
+                            <h1 className={`text-3xl font-bold  sm:mt-5 ${isScrolled ? "text-secondary" : "md:text-white text-secondary"}`}>OFLAD</h1>
+                        </div>
+                        <h2 className={`hidden lg:block  text-lg font-montserrat font-bold ${isScrolled ? "text-secondary" : "md:text-slate-200 text-secondary"}`}>Organization for Learning and Development</h2>
                     </a>
 
                     {/* Desktop View */}

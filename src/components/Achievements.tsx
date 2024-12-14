@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";
-import { FaGlobeAfrica, FaHandshake, FaLaptop } from "react-icons/fa";
+import { FaHandshake, FaSchool } from "react-icons/fa";
 import { GiWhiteBook } from "react-icons/gi";
+import { IoIosSchool } from "react-icons/io";
 
 
 const Achievements = () => {
@@ -30,10 +31,10 @@ const Achievements = () => {
     }, []);
 
     const achievements = [
-        { id: 1, title: "Books Donated", value: 500, icon: <GiWhiteBook /> },
-        { id: 2, title: "Volunteers Engaged", value: 300, icon: <FaHandshake /> },
-        { id: 3, title: "Training Sessions", value: 20, icon: <FaLaptop /> },
-        { id: 4, title: "Community Members Reached", value: 1000, icon: <FaGlobeAfrica /> },
+        { id: 1, title: "Books Donated", value: 1500, icon: <GiWhiteBook /> },
+        { id: 2, title: "Youth Volunteers", value: 150, icon: <FaHandshake /> },
+        { id: 3, title: "Students", value: 1500, icon: <IoIosSchool /> },
+        { id: 4, title: "Schools and libraries supported ", value: 5, icon: <FaSchool /> },
     ];
 
     return (
@@ -58,7 +59,7 @@ const Achievements = () => {
                                     end={achievement.value}
                                     duration={2.5}
                                     separator=","
-                                    suffix={achievement.id === 4 ? "+" : ""}
+                                    suffix={achievement.id === 4 || achievement.id === 1 ? "+" : ""}
                                 />
                             )}
                         </div>

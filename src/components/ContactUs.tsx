@@ -1,6 +1,8 @@
-import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+
 
 // Define the validation schema using Zod
 const contactFormSchema = z.object({
@@ -16,10 +18,48 @@ const ContactUs = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
     resolver: zodResolver(contactFormSchema),
   });
+  const [isLoading, setIsLoading] = useState(false)
 
-  const onSubmit = (data: FormData) => {
-    console.log(data); // Handle form submission
-    reset(); // Reset the form after submission
+  const onSubmit = async (data: FormData) => {
+    try {
+      setIsLoading(true)
+      const htmlForm = `
+      <html>
+        <body>
+          <h1>Contact Form Submission</h1>
+          <p><strong>Name:</strong> ${data.name}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${data.message}</p>
+        </body>
+      </html>
+    `;
+      const response = await fetch('http://localhost:8000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          from: data.email,
+          html: htmlForm,
+          subject: 'New Contact Form Submission',
+        }),
+      });
+
+      if (response.ok) {
+        reset();
+        alert('Your message has been sent successfully!');
+        setIsLoading(false)
+      } else {
+        alert('There was an error sending your message. Please try again later.');
+        setIsLoading(false)
+      }
+    } catch (error) {
+      console.error('Error sending form data:', error);
+      alert('There was an error sending your message. Please try again later.');
+      setIsLoading(false)
+    }
   };
 
   return (
@@ -105,9 +145,10 @@ const ContactUs = () => {
               <div className="text-right">
                 <button
                   type="submit"
-                  className="bg-secondary-dark text-white px-6 py-3 rounded-lg hover:bg-secondary-dark/80 transition focus:outline-none focus:ring-2 focus:ring-secondary-dark"
+                  disabled={isLoading}
+                  className={`bg-secondary-dark ${isLoading ? "opacity-50" : "opacity-100"} text-white px-6 py-3 rounded-lg hover:bg-secondary-dark/80 transition focus:outline-none focus:ring-2 focus:ring-secondary-dark`}
                 >
-                  Send Message
+                  {isLoading ? "Sending..." : "Send Message"}
                 </button>
               </div>
             </form>
@@ -121,7 +162,7 @@ const ContactUs = () => {
               </h3>
               <div className="space-y-8 text-gray-700">
                 <p>
-                  <strong>Address:</strong> 1234 Education Street, Addis Ababa,
+                  <strong>Address:</strong> Addis Ababa,
                   Ethiopia
                 </p>
                 <p>
@@ -134,7 +175,7 @@ const ContactUs = () => {
             </div>
 
             {/* Embedded Map */}
-            <div className="overflow-hidden rounded-lg shadow-md">
+            {/* <div className="overflow-hidden rounded-lg shadow-md">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6927425373127!2d76.93022581526007!3d10.788078692321226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a89106ffdcba0e9%3A0xddf0e6c4f3a6e5e6!2sGoogle%20India!5e0!3m2!1sen!2sin!4v1634543209367!5m2!1sen!2sin"
                 width="100%"
@@ -144,7 +185,7 @@ const ContactUs = () => {
                 loading="lazy"
                 className="rounded-lg"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

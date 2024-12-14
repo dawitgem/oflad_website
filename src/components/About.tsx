@@ -111,8 +111,13 @@ const About = () => {
                         Who We Are
                     </h2>
                     <p className="sm:text-lg  text-gray-700">
-                        The <span className="font-bold">Organization for Learning and Development (OfLaD)</span> is a local nonprofit organization established in Ethiopia on August 26, 2021.
-                        Our mission is to empower communities through education and literacy, focusing on building the capacity of public libraries to foster a culture of reading and lifelong learning.
+                        The <span className="font-bold">Organization for Learning and Development (OfLaD)</span> is a local nonprofit organization
+                        established in Ethiopia on August 26, 2021. Our mission is to empower communities
+                        through literacy, focusing building the capacity of public libraries to foster a culture of
+                        reading and lifelong learning.
+                        We strive to provide safe and free reading spaces, promote digital literacy, and create
+                        learning opportunities for children and youth through various skill-based training
+                        programs.
                     </p>
                     <p className="sm:text-lg text-gray-700">
                         We strive to provide safe and free reading spaces, promote digital literacy, and create informal learning opportunities for children and youth through various skill-based training programs.

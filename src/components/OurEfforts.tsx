@@ -65,7 +65,7 @@ const OurEfforts = () => {
             <div className="p-8 bg-blue-100 space-y-8 w-full">
                 <h2 className="text-4xl font-extrabold font-montserrat text-secondary-dark ">Our Efforts</h2>
                 <p className="text-lg font-medium text-gray-700 w-full">
-                    Despite being newly established in 2021, <strong>OfLaD</strong> has made significant strides in promoting literacy and education in Ethiopia. From reopening libraries and organizing reading campaigns to providing essential school materials and skill-based training, we’re proving that a young organization can make a lasting impact.
+                    Despite being newly established in 2021, <strong>OfLaD</strong> has made significant strides in promoting literacy  in Ethiopia. From reopening libraries and organizing reading campaigns to providing essential school materials and skill-based training, we’re proving that a young organization can make a lasting impact.
                 </p>
             </div>
 

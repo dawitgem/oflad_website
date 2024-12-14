@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { capitalize } from "../../utils/captialize";
 
 // Zod Schema
 const volunteerSchema = z.object({
@@ -19,16 +20,57 @@ const VolunteerForm = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors }, reset
     } = useForm<VolunteerFormValues>({
         resolver: zodResolver(volunteerSchema),
     });
+    const [isLoading, setIsLoading] = useState(false)
 
-    const [submittedData, setSubmittedData] = useState<VolunteerFormValues | null>(null);
 
-    const onSubmit = (data: VolunteerFormValues) => {
-        setSubmittedData(data);
-        console.log("Submitted Data:", data);
+    const onSubmit = async (data: VolunteerFormValues) => {
+        try {
+            setIsLoading(true)
+            const htmlForm = `
+            <html>
+              <body>
+                <h1>Volunteer Form Submission</h1>
+                <p><strong>Name:</strong> ${data.firstName}  ${data.lastName}</p>
+                <p><strong>Email:</strong> ${data.email}</p>
+                <p><strong>phone:</strong>${data.phoneNumber}</p>
+                <p><strong>skill:</strong>${data.skill}</p>
+                <p><strong>reason:</strong></p>
+                <p>${data.reason}</p>
+              </body>
+            </html>
+          `;
+            const response = await fetch('http://localhost:8000/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: `${capitalize(data.firstName)} ${capitalize(data.lastName)} `,
+                    from: data.email,
+                    html: htmlForm,
+                    subject: 'New Volunteer Form Submission',
+                }),
+            });
+
+            if (response.ok) {
+                reset();
+                alert('Your message has been sent successfully!');
+                setIsLoading(false)
+            } else {
+                alert('There was an error sending your message. Please try again later.');
+                setIsLoading(false)
+            }
+        } catch (error) {
+            console.error('Error sending form data:', error);
+            alert('There was an error sending your message. Please try again later.');
+            setIsLoading(false)
+        }
+
+
     };
 
     return (
@@ -119,19 +161,12 @@ const VolunteerForm = () => {
                 {/* Submit Button */}
                 <button
                     type="submit"
-                    className="w-[80px] bg-secondary text-white py-2 px-4 rounded-md hover:bg-secondary-dark"
+                    className={`w-[80px] ${isLoading ? "opacity-50" : "opacity-100"} bg-secondary text-white py-2 px-4 rounded-md hover:bg-secondary-dark`}
                 >
-                    Submit
+                    {isLoading ? "Sending..." : "Submit"}
                 </button>
             </form>
 
-            {/* Display Submitted Data */}
-            {submittedData && (
-                <div className="mt-6 p-4 bg-green-100 rounded-md">
-                    <h3 className="text-lg font-semibold text-green-700">Submitted Data</h3>
-                    <pre className="text-sm text-gray-700">{JSON.stringify(submittedData, null, 2)}</pre>
-                </div>
-            )}
         </div>
     );
 };

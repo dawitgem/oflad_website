@@ -15,6 +15,7 @@ import img7 from "../public/assets/img37.jpg"
 import img8 from "../public/assets/img38.jpg"
 import img9 from "../public/assets/img39.jpg"
 import img10 from "../public/assets/img40.jpg"
+import img11 from "../public/assets/img56.jpg"
 
 const galleryImages = [
     { id: 1, src: img1, alt: 'Image 1', description: '' },
@@ -26,7 +27,8 @@ const galleryImages = [
     { id: 7, src: img7, alt: 'Image 7', description: '' },
     { id: 8, src: img8, alt: 'Image 8', description: '' },
     { id: 9, src: img9, alt: 'Image 9', description: '' },
-    { id: 10, src: img10, alt: 'Image 10', description: '' },
+    { id: 10, src: img11, alt: 'Image 10', description: '' },
+    { id: 11, src: img10, alt: 'Image 10', description: '' },
 ];
 
 const OurGallery = () => {

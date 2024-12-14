@@ -2,7 +2,7 @@ import books from "../public/assets/books.svg"
 import student from "../public/assets/student.svg"
 import donation from "../public/assets/donation.svg"
 import logo from "../public/logo.png"
-import { CiFacebook, CiInstagram, CiLinkedin, CiLocationOn, CiMail, CiPhone } from "react-icons/ci"
+import { CiFacebook, CiInstagram, CiLinkedin, CiLocationOn, CiMail, CiPhone, CiYoutube } from "react-icons/ci"
 import { RiTelegramLine, RiTwitterXFill } from "react-icons/ri"
 import { useState } from "react"
 import DonateButton from "./DonateButton"
@@ -62,8 +62,9 @@ const Footer = () => {
                                 <a href="https://www.linkedin.com/in/siele-shifferaw/">
                                     <CiLinkedin className="bg-secondary/30 rounded-full  p-[4px] text-primary-light hover:text-white hover:bg-primary-dark/30" />
                                 </a>
-
-
+                                <a href="https://www.youtube.com/@OfLaD2021">
+                                    <CiYoutube className="bg-secondary/30 rounded-full  p-[4px] text-primary-light hover:text-white hover:bg-primary-dark/30" />
+                                </a>
 
                             </div>
 

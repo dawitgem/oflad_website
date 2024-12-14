@@ -41,7 +41,7 @@ export const ProjectDetail = ({
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <DialogPanel className="absolute top-24 inset-0 bg-white p-6 z-[99] h-full overflow-y-auto space-y-4">
+                            <DialogPanel className="absolute top-28 inset-0 bg-white p-6 z-[99]  overflow-y-auto space-y-4">
                                 {/* Back Button */}
                                 <button
                                     className="flex gap-2 text-xl font-bold p-1 text-secondary-dark items-center group relative"
@@ -53,23 +53,25 @@ export const ProjectDetail = ({
                                 </button>
 
                                 {/* Dialog Content */}
-                                <div className="w-full flex flex-col gap-10">
+                                <div className="w-full flex flex-col gap-10 ">
                                     <DialogTitle className="text-3xl font-extrabold text-secondary-dark text-center ">
                                         {selectedProject?.title}
                                     </DialogTitle>
-                                    <div className="flex md:flex-row flex-col-reverse gap-10 items-center overflow-hidden">
-                                        <p className="text-gray-600 text-lg ">
+                                    <div className="flex md:flex-row flex-col-reverse gap-10 items-start overflow-hidden">
+                                        <p className="md:max-w-[50%] text-gray-600 text-lg ">
                                             {selectedProject?.longDescription}
                                         </p>
-                                        <div className="max-w-xl ">
-                                            <img src={selectedProject?.image} alt="" className="lg:min-w-[500px] " />
+                                        <div className="  grid md:grid-cols-1  gap-5">
+                                            <img src={selectedProject?.images[0]} alt="oflad" />
+                                            <img src={selectedProject?.images[1]} alt="" />
+
                                         </div>
 
                                     </div>
                                     <div className="mt-6 text-right">
                                         <button
                                             onClick={() => setSelectedProject(null)}
-                                            className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition"
+                                            className="bg-secondary text-white px-4 py-2 rounded hover:bg-secondary-dark transition"
                                         >
                                             Close
                                         </button>

@@ -4,7 +4,7 @@ import { partnersLogo } from '../utils/constants'
 const OurPartners = () => {
     return (
         <div className='p-20 space-y-8 w-full overflow-hidden'>
-            <h1 className='text-4xl text-secondary text-center font-extrabold font-montserrat w-full break-words'>Our Partners</h1>
+            <h1 className='text-4xl text-secondary text-center font-extrabold font-montserrat w-full break-words'>Our Partners & Supporters</h1>
             <div className="w-full inline-flex flex-nowrap"
                 x-data="{}"
                 x-init="$nextTick(() => {
