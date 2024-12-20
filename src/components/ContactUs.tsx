@@ -34,7 +34,7 @@ const ContactUs = () => {
         </body>
       </html>
     `;
-      const response = await fetch('https://oflad-website.onrender.com/send-email', {
+      const response = await fetch('http://localhost:8000/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ const ContactUs = () => {
                   <strong>Email:</strong> info@oflad.org
                 </p>
                 <p>
-                  <strong>Phone:</strong> +251 123 456 789
+                  <strong>Phone:</strong>   +251 941 779393
                 </p>
               </div>
             </div>

@@ -38,8 +38,13 @@ const Footer = () => {
                                 </div>
                             </a>
                             <p className="text-sm text-center text-white/60 w-full break-words">
-                                Organization for Learning and Development (OFLAD) is an Ethiopian NGO empowering communities through education, health, and women’s development. We provide libraries, digital literacy programs, and community hubs to foster lifelong learning and growth.
+                                Organization for Learning and Development (OfLaD) is an Ethiopian nonprofit established in 2021 to empower communities through literacy and lifelong learning. We enhance public libraries, promote digital literacy, and provide skill-based training for children and youth.
+
+                                Our Girls Club initiative empowers girls through book clubs, life skills training, and mentorship. At OfLaD, we believe education transforms lives. Join us in making a lasting impact!
                             </p>
+
+
+
                             <div className="flex flex-wrap gap-5 items-center text-5xl ">
                                 <a href="https://web.facebook.com/p/Organization-for-Learning-and-Dev-Community-Library-100075708772586/?_rdc=1&_rdr">
                                     <CiFacebook className="bg-secondary/30 rounded-full  p-[4px] text-primary-light hover:text-white hover:bg-primary-dark/30" />

@@ -11,12 +11,15 @@ import logo4 from "../public/assets/logo-8643.png"
 import logo5 from "../public/assets/logo3333.jpg"
 import logo6 from "../public/assets/new-Logo-7.png"
 import logo7 from "../public/assets/logo-1211.jpg"
+import logo8 from "../public/assets/logo-2111.jpg"
+import logo9 from "../public/assets/logo-awaqi.jpg"
 
-import libImg from "../public/assets/img21.png"
-import libImg2 from "../public/assets/img50.jpg"
-import libImg3 from "../public/assets/img51.jpg"
-import exbImg from "../public/assets/img10.jpeg"
-import exbImg2 from "../public/assets/img58.jpg"
+import lib1Img from "../public/assets/img51.jpg"
+import lib1Img2 from "../public/assets/img50.jpg"
+import lib1Img3 from "../public/assets/img64.jpg"
+import lib2Img from "../public/assets/img12.jpeg"
+import lib2Img2 from "../public/assets/img62.jpg"
+import lib2Img3 from "../public/assets/img63.jpg"
 import festImg from "../public/assets/img22.jpg"
 import festImg2 from "../public/assets/img52.jpg"
 import festImg3 from "../public/assets/img53.jpg"
@@ -158,30 +161,29 @@ export const getInvolvedConsts = [
 
 ];
 
-export const partnersLogo = [logo1, logo2, logo3, logo4, logo5, logo6, logo7]
+export const partnersLogo = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
 
 export const projects = [
     {
         id: 1,
-        title: "Community Library and Information Center (CLiC)",
-        image: libImg, // Replace with the actual image URL
-        images: [libImg3, libImg2],
+        title: "Mekanissa Family Community Library",
+        image: lib1Img, // Replace with actual image URL
+        images: [lib1Img3, lib1Img2],
         shortDescription:
-            "OfLaD successfully reopened the Community Library and Information Center (CLiC) in Lideta Subcity after it had been closed for over two years.",
+            "OfLaD has opened a Family Community Library in Nifas Silk Lafto Subcity, near the Mekanissa and Kore condominium areas. The library serves local children, including those from the Kori Kids project, providing essential educational resources.",
         longDescription:
-            "OfLaD proudly manages the Community Library and Information Center (CLiC) in Addis Ababa, located in Lideta Subcity Woreda 4 Youth Center. This vital resource serves as a beacon of hope and learning for the surrounding communities, including the densely populated Mekanissa and Kore condominium areas, where access to public libraries is limited. The library also plays a significant role in supporting children from the Kori Kids project who live near the Addis Ababa landfill area (Koshe), offering them a safe and nurturing environment to read, learn, and grow. \n\nAfter being closed for over two years, OfLaD's efforts have transformed CLiC into a thriving community hub. The library attracts an average of 30 visitors daily, ranging from young children and students to parents and professionals. With its extensive collection of books, digital learning tools, and interactive programs, the library caters to diverse learning needs and fosters a love for reading. \n\nBeyond providing access to knowledge, CLiC hosts various community-led initiatives, such as literacy workshops, book clubs, and educational seminars. These programs are designed to promote lifelong learning, social connection, and personal development. Through partnerships with local schools, volunteers, and other organizations, the library continues to expand its impact by addressing educational inequalities and empowering underprivileged communities. \n\nThe reopening and ongoing management of CLiC exemplify OfLaD’s commitment to creating inclusive and accessible spaces where individuals of all ages can unlock their potential. By bridging gaps in education and fostering a culture of learning, CLiC serves as a cornerstone for building a brighter future for the communities it serves."
+            "OfLaD proudly opens the Family Community Library at Nifas Silk Lafto Subcity, strategically located near the Mekanissa and Kore condominium areas, which are home to a significant number of residents. The library serves as an educational haven for local children, including those from the Kori Kids project who live near the Addis Abeba dumpster area (Koshe). The library provides a rich variety of books, digital resources, and interactive learning materials, offering children a safe and nurturing space to develop essential literacy skills. With its focus on community outreach, the library also hosts activities and programs aimed at fostering a love for reading, enhancing academic success, and empowering children with the tools they need for a brighter future."
     },
     {
         id: 2,
-        title: "Book Reading Exhibitions",
-        image: exbImg, // Replace with actual image URL
-        images: [exbImg, exbImg2],
+        title: "Lideta Subcity Library at Woreda 4 Youth Center",
+        image: lib2Img, // Replace with actual image URL
+        images: [lib2Img3, lib2Img2],
         shortDescription:
-            "Through interactive and engaging book reading exhibitions, OfLaD fosters a love for reading among children and youth.",
+            "OfLaD has opened a Family Community Library at Lideta Subcity Woreda 4 Youth Center, providing valuable educational services to youth and children, including students from Tesfa Public School.",
         longDescription:
-            "OfLaD's book reading exhibitions are immersive and interactive events designed to inspire a profound love for reading and promote literacy among children and youth. These exhibitions bring stories to life through captivating storytelling sessions, creative workshops, and engaging activities that appeal to all age groups. With vibrant displays and hands-on interactions, attendees are encouraged to explore books, discover new genres, and develop a deeper connection to the world of literature. \n\nCollaboration is at the heart of these events. OfLaD works alongside schools, libraries, local publishers, authors, and volunteers to curate diverse collections of books that reflect the interests and cultural backgrounds of the community. By organizing book donation drives as part of the exhibitions, we ensure that children from underprivileged backgrounds gain access to high-quality books and reading materials. These donations not only support individual literacy but also contribute to building libraries in underserved schools and communities. \n\nWorkshops at the exhibitions include creative writing sessions, reading strategy tutorials, and discussions about the importance of literacy in personal and professional growth. Authors and educators participate as facilitators, sharing their expertise and inspiring attendees to think critically and imaginatively. Parents and guardians are actively engaged through sessions designed to help them nurture reading habits at home, ensuring the learning continues beyond the exhibition. \n\nThese exhibitions are not just events but milestones in OfLaD's mission to create a society where reading is celebrated, knowledge is valued, and literacy is accessible to all. By making books more engaging and fostering community-wide involvement, OfLaD transforms reading from a solitary activity into a shared cultural experience, empowering the next generation with the tools they need to succeed."
-    }
-    ,
+            "OfLaD’s second library is located at Lideta Subcity’s Woreda 4 Youth Center, a key location offering vital educational support to the local community, particularly youth and children. The library is strategically placed to benefit students from Tesfa Public School, located nearby, by providing access to a diverse collection of books, digital learning tools, and interactive educational programs. This library serves as a hub for personal and academic development, helping students improve literacy, engage in extracurricular activities, and explore new subjects. Additionally, the library hosts various workshops and community programs designed to encourage lifelong learning, critical thinking, and social interaction, empowering students and fostering a sense of belonging within their community."
+    },
     {
         id: 3,
         title: "Reading Festivals",
@@ -191,19 +193,17 @@ export const projects = [
             "OfLaD’s reading festivals are vibrant, community-centered events that celebrate the joy of reading. By bringing together students, parents, and educators, these festivals aim to foster consistent reading habits and spark curiosity.",
         longDescription:
             "Reading campaigns have been a cornerstone initiative of OfLaD, and our Reading Festivals bring this vision to life. These vibrant, community-centered events celebrate the joy of reading by uniting students, parents, educators, and local leaders in a shared mission to foster a love for books and learning. Through engaging activities like storytelling sessions, book fairs, reading competitions, and interactive workshops, the festivals aim to inspire curiosity and ignite a lifelong passion for reading. \n\nOfLaD collaborates with schools, libraries, publishers, and volunteers to make these events impactful and inclusive. By distributing free books and educational materials at the festivals, we ensure that children from underprivileged backgrounds have access to quality reading resources. Our storytelling sessions, often led by authors, teachers, and community role models, create an engaging and immersive experience that captivates young minds. \n\nIn addition to sparking interest in reading, the festivals promote the importance of parental involvement in children's literacy journeys. Parents are encouraged to participate in reading workshops, where they learn practical tips on fostering a reading culture at home. Educators benefit from professional development opportunities that focus on creative teaching methods to enhance reading engagement in classrooms. \n\nThese festivals are more than just events; they are a movement to build a reading culture that extends beyond the festivities. By embedding a love for reading in communities and reinforcing the importance of lifelong learning, OfLaD strives to create an environment where education is celebrated and knowledge is shared across generations."
-    }
-    ,
+    },
     {
         id: 4,
-        title: "Volunteer-Led Summer Classes &  Skill Training",
+        title: "Volunteer-Led Summer Classes & Skill Training",
         image: studImg, // Replace with actual image URL
         images: [studImg2, studImg3],
         shortDescription:
             "During the summer, OfLaD organizes volunteer-led classes to help students prepare for the upcoming school year. Volunteers focus on foundational subjects like math, reading, and writing, to ensure that students are academically ready.",
         longDescription:
             "OfLaD’s Volunteer-Led Summer Classes aim to help students get ready for the school year by focusing on essential academic subjects like math, reading, and writing. These volunteer-led sessions are designed to support students in reinforcing the fundamentals, boosting their academic confidence, and ensuring they are prepared for the challenges of the upcoming school year. The summer classes provide a safe, structured environment where students can improve their academic skills with the help of dedicated volunteers. Alongside the summer sessions, OfLaD offers year-round programs at its community hubs. These hubs provide students with opportunities to develop digital literacy, art, and other important life skills. The community hubs are open throughout the year, offering a variety of educational activities that allow students to gain essential skills at their own pace. The hubs also provide a space where students can learn creative and practical skills such as digital skills and artistic expression, preparing them for both academic success and personal growth."
-    }
-    ,
+    },
     {
         id: 5,
         title: "School Material Support",
@@ -214,5 +214,4 @@ export const projects = [
         longDescription:
             "OfLaD is committed to bridging the educational resource gap by supporting schools with vital learning materials such as books, stationery, and digital tools. Recognizing the immense challenges faced by underprivileged schools, we work collaboratively with a network of partner organizations, individual donors, and passionate volunteers. These partnerships allow us to pool resources, share expertise, and reach a broader spectrum of communities. Our support extends beyond providing physical items—we engage with educators and school administrators to understand their specific needs, ensuring the resources we provide are impactful and tailored to their unique circumstances. We also organize community drives, fundraising campaigns, and donation events to collect high-quality materials, including textbooks, library books, educational software, and essential classroom supplies like notebooks, pens, and art materials. By incorporating digital tools, we aim to introduce students to modern learning methods, helping them stay competitive in an increasingly technology-driven world. Through these efforts, OfLaD not only addresses immediate resource shortages but also fosters a culture of collaboration and shared responsibility for education. Our goal is to create sustainable change, empowering schools to provide a nurturing and equitable environment where every student has the opportunity to thrive academically and develop skills for a brighter future."
     }
-
 ];

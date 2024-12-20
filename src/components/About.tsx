@@ -118,10 +118,15 @@ const About = () => {
                         We strive to provide safe and free reading spaces, promote digital literacy, and create
                         learning opportunities for children and youth through various skill-based training
                         programs.
-                    </p>
-                    <p className="sm:text-lg text-gray-700">
+                        <br />
+                        <br />
                         We strive to provide safe and free reading spaces, promote digital literacy, and create informal learning opportunities for children and youth through various skill-based training programs.
                     </p>
+                    <ul className="mt-2 text-gray-600 sm:text-lg  space-y-2">
+                        <li><strong>Access:</strong> Equitable and open access for all.</li>
+                        <li><strong>Welcoming:</strong> Creating safe spaces for all.</li>
+                    </ul>
+                    <p className="text-gray-700 sm:text-lg">These values define who we are and drive everything we do to empower communities through literacy and learning</p>
                 </animated.div>
 
             </div>

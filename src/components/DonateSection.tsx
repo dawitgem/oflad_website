@@ -11,7 +11,7 @@ const DonateSection = () => {
                 <div className="w-full absolute inset-0 
              bg-gradient-to-t from-black/60 via-transparent to-black/80 backdrop-blur-[2.5px]"></div>
                 <div className='flex  flex-col gap-4 relative z-20 w-full h-full justify-center items-center text-white'>
-                    <h1 className='text-7xl font-black w-full text-center break-words'>Support Education. <br /> Shape the Future.</h1>
+                    <h1 className='text-7xl font-black w-full text-center break-words'>Support Reading. <br /> Shape the Future.</h1>
                     <p className='text-xl text-white/80 w-2/3 text-center break-words'>
                         With your generous donation, you’re helping to create opportunities for lifelong learning and community growth, ensuring a brighter tomorrow for all.
                     </p>
