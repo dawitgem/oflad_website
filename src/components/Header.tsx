@@ -1,4 +1,4 @@
-import logo from "../public/logo.png";
+import logo from "../../public/logo.png";
 import { useEffect, useState } from "react";
 import NavSheet from "./NavSheet";
 import DonateModal from "./DonateModal";

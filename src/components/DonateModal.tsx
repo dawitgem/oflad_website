@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from "@headlessui/react";
-import gofundmeLogo from "../public/assets/GoFundMe-Logo.png"
-import boalogo from "../public/assets/boa.png"
-import cbe from "../public/assets/cbe.png"
+import gofundmeLogo from "../../public/assets/GoFundMe-Logo.png"
+import boalogo from "../../public/assets/boa.png"
+import cbe from "../../public/assets/cbe.png"
 
 const DonateModal = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (value: boolean) => void }) => {
     return (

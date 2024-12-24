@@ -38,7 +38,7 @@ const Achievements = () => {
     ];
 
     return (
-        <div ref={componentRef} id="our-efforts" className="p-8 bg-[url(/src/public/assets/img21.png)] bg-no-repeat bg-cover text-center  min-h-[450px] flex flex-col justify-center items-center relative ">
+        <div ref={componentRef} id="our-efforts" className="p-8 bg-[url(/public/assets/img21.png)] bg-no-repeat bg-cover text-center  min-h-[450px] flex flex-col justify-center items-center relative ">
             <div className="w-full absolute inset-0 
             bg-gradient-to-t from-black/85 via-black/85 to-black/85
               "></div>

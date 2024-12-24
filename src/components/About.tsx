@@ -1,5 +1,5 @@
-import img1 from "../public/assets/main_logo.png";
-import img2 from "../public/assets/img5.jpg";
+import img1 from "../../public/assets/main_logo.png";
+import img2 from "../../public/assets/img5.jpg";
 import { FaEye } from 'react-icons/fa';
 import { FaBullseye, FaHandHoldingHeart } from 'react-icons/fa6';
 import { useInView } from "react-intersection-observer";
@@ -123,7 +123,7 @@ const About = () => {
                         We strive to provide safe and free reading spaces, promote digital literacy, and create informal learning opportunities for children and youth through various skill-based training programs.
                     </p>
                     <ul className="mt-2 text-gray-600 sm:text-lg  space-y-2">
-                        <li><strong>Access:</strong> Equitable and open access for all.</li>
+                        <li><strong>Access:</strong> Equitable access to reading materials and spaces for all</li>
                         <li><strong>Welcoming:</strong> Creating safe spaces for all.</li>
                     </ul>
                     <p className="text-gray-700 sm:text-lg">These values define who we are and drive everything we do to empower communities through literacy and learning</p>
@@ -184,7 +184,7 @@ const About = () => {
                             <span className='text-primary-dark'>Our</span> Value
                         </h2>
                         <ul className="mt-2 text-gray-600 sm:text-lg font-medium space-y-2">
-                            <li><strong>Access:</strong> Equitable and open access for all.</li>
+                            <li><strong>Access:</strong> Equitable access to reading materials and spaces for all</li>
                             <li><strong>Volunteerism:</strong> Encouraging and valuing volunteers.</li>
                             <li><strong>Welcoming:</strong> Creating safe spaces for all.</li>
                             <li><strong>Innovation:</strong> Constantly evolving and improving.</li>

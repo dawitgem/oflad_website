@@ -34,7 +34,7 @@ const ContactUs = () => {
         </body>
       </html>
     `;
-      const response = await fetch('http://localhost:8000/send-email', {
+      const response = await fetch('https://oflad-website.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -162,8 +162,7 @@ const ContactUs = () => {
               </h3>
               <div className="space-y-8 text-gray-700">
                 <p>
-                  <strong>Address:</strong> Addis Ababa,
-                  Ethiopia
+                  <strong>Address:</strong>Sarbet, Addis Ababa, Ethiopia
                 </p>
                 <p>
                   <strong>Email:</strong> info@oflad.org
@@ -174,19 +173,19 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Embedded Map */}
-            {/* <div className="overflow-hidden rounded-lg shadow-md">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6927425373127!2d76.93022581526007!3d10.788078692321226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a89106ffdcba0e9%3A0xddf0e6c4f3a6e5e6!2sGoogle%20India!5e0!3m2!1sen!2sin!4v1634543209367!5m2!1sen!2sin"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                className="rounded-lg"
-              ></iframe>
-            </div> */}
+
           </div>
+        </div>
+        <div className="overflow-hidden rounded-lg shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.8444551485077!2d38.740468!3d8.986457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTknMTEuMyJOIDM4wrA0NCcyNS43IkU!5e0!3m2!1sen!2set!4v1734897508394!5m2!1sen!2set"
+            width="100%"
+            height="500"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
+            className="rounded-lg"
+          ></iframe>
         </div>
       </div>
     </div>

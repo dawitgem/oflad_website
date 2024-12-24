@@ -1,7 +1,7 @@
-import books from "../public/assets/books.svg"
-import student from "../public/assets/student.svg"
-import donation from "../public/assets/donation.svg"
-import logo from "../public/logo.png"
+import books from "../../public/assets/books.svg"
+import student from "../../public/assets/student.svg"
+import donation from "../../public/assets/donation.svg"
+import logo from "../../public/logo.png"
 import { CiFacebook, CiInstagram, CiLinkedin, CiLocationOn, CiMail, CiPhone, CiYoutube } from "react-icons/ci"
 import { RiTelegramLine, RiTwitterXFill } from "react-icons/ri"
 import { useState } from "react"
@@ -14,7 +14,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <>
-            <footer className="relative bg-[url(/src/public/assets/footerwave.svg)] bg-cover bg-no-repeat  ">
+            <footer className="relative bg-[url(/public/assets/footerwave.svg)] bg-cover bg-no-repeat  ">
                 <div className="relative w-full z-10 flex flex-col  flex-wrap gap-10 xs:p-8 xs:items-center ">
                     <div className="flex  xs:justify-center gap-4 items-center flex-wrap">
                         <img src={books} alt="books icon" className="w-24 h-20 object-cover" />
@@ -38,7 +38,7 @@ const Footer = () => {
                                 </div>
                             </a>
                             <p className="text-sm text-center text-white/60 w-full break-words">
-                                Organization for Learning and Development (OfLaD) is an Ethiopian nonprofit established in 2021 to empower communities through literacy and lifelong learning. We enhance public libraries, promote digital literacy, and provide skill-based training for children and youth.
+                                OfLaD is a nonprofit organization established to empower communities through literacy, focusing on fostering a culture of reading. We open and enhance community libraries, promote digital literacy, and provide skill-based training for children and youth.
 
                                 Our Girls Club initiative empowers girls through book clubs, life skills training, and mentorship. At OfLaD, we believe education transforms lives. Join us in making a lasting impact!
                             </p>
@@ -99,7 +99,7 @@ const Footer = () => {
                             <h3 className=" w-full break-words font-semibold text-xl  ">Get In Touch</h3>
                             <div className="flex gap-3 items-center text-lg text-slate-100/80 hover:text-primary-dark">
                                 <CiLocationOn className="text-3xl text-primary-dark" />
-                                <p className="w-full break-words">Addis Ababa,   Ethiopia</p>
+                                <p className="w-full break-words">Sarbet,Addis Ababa,   Ethiopia</p>
                             </div>
                             <div className="flex gap-3 items-center text-lg text-slate-100/80 hover:text-primary-dark">
                                 <CiPhone className="text-3xl text-primary-dark" />

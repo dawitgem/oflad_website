@@ -5,17 +5,17 @@ import { GrNext, GrPrevious } from 'react-icons/gr';
 import { useSpring, animated } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 
-import img1 from '../public/assets/img13.jpeg';
-import img2 from "../public/assets/img32.jpg"
-import img3 from "../public/assets/img34.jpg"
-import img4 from "../public/assets/img35.jpg"
-import img5 from "../public/assets/img36.jpg"
-import img6 from "../public/assets/img41.jpg"
-import img7 from "../public/assets/img37.jpg"
-import img8 from "../public/assets/img38.jpg"
-import img9 from "../public/assets/img39.jpg"
-import img10 from "../public/assets/img40.jpg"
-import img11 from "../public/assets/img56.jpg"
+import img1 from '../../public/assets/img13.jpeg';
+import img2 from "../../public/assets/img32.jpg"
+import img3 from "../../public/assets/img34.jpg"
+import img4 from "../../public/assets/img35.jpg"
+import img5 from "../../public/assets/img36.jpg"
+import img6 from "../../public/assets/img41.jpg"
+import img7 from "../../public/assets/img37.jpg"
+import img8 from "../../public/assets/img38.jpg"
+import img9 from "../../public/assets/img39.jpg"
+import img10 from "../../public/assets/img40.jpg"
+import img11 from "../../public/assets/img56.jpg"
 
 const galleryImages = [
     { id: 1, src: img1, alt: 'Image 1', description: '' },

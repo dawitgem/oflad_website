@@ -7,7 +7,7 @@ const DonateSection = () => {
     console.log(isDonateModalOpen)
     return (
         <>
-            <div className='bg-[url(/src/public/assets/Donationphoto1.jpg)] bg-cover bg-no-repeat md:h-[600px] relative'>
+            <div className='bg-[url(/public/assets/Donationphoto1.jpg)] bg-cover bg-no-repeat md:h-[600px] relative'>
                 <div className="w-full absolute inset-0 
              bg-gradient-to-t from-black/60 via-transparent to-black/80 backdrop-blur-[2.5px]"></div>
                 <div className='flex  flex-col gap-4 relative z-20 w-full h-full justify-center items-center text-white'>

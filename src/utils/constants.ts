@@ -1,33 +1,34 @@
-import img1 from "../public/assets/img44.jpg"
-import img2 from "../public/assets/img18.jpg";
-import img3 from "../public/assets/img45.jpeg";
-import img4 from "../public/assets/img45.jpeg";
-import img5 from "../public/assets/img47.jpg";
-import img6 from "../public/assets/img46.jpg";
-import logo1 from "../public/assets/logo-123 (1).jpg"
-import logo2 from "../public/assets/logo-345.jpg"
-import logo3 from "../public/assets/logo-6734.jpg"
-import logo4 from "../public/assets/logo-8643.png"
-import logo5 from "../public/assets/logo3333.jpg"
-import logo6 from "../public/assets/new-Logo-7.png"
-import logo7 from "../public/assets/logo-1211.jpg"
-import logo8 from "../public/assets/logo-2111.jpg"
-import logo9 from "../public/assets/logo-awaqi.jpg"
+import img1 from "../../public/assets/img44.jpg"
+import img2 from "../../public/assets/img18.jpg";
+import img3 from "../../public/assets/img45.jpeg";
+import img4 from "../../public/assets/img45.jpeg";
+import img5 from "../../public/assets/img47.jpg";
+import img6 from "../../public/assets/img46.jpg";
+import logo1 from "../../public/assets/logo-123 (1).jpg"
+import logo2 from "../../public/assets/logo-345.jpg"
+import logo3 from "../../public/assets/logo-6734.jpg"
+import logo4 from "../../public/assets/logo-8643.png"
+import logo5 from "../../public/assets/logo3333.jpg"
+import logo6 from "../../public/assets/new-Logo-7.png"
+import logo7 from "../../public/assets/logo-1211.jpg"
+import logo8 from "../../public/assets/logo-2111.jpg"
+import logo9 from "../../public/assets/logo-awaqi.jpg"
 
-import lib1Img from "../public/assets/img51.jpg"
-import lib1Img2 from "../public/assets/img50.jpg"
-import lib1Img3 from "../public/assets/img64.jpg"
-import lib2Img from "../public/assets/img12.jpeg"
-import lib2Img2 from "../public/assets/img62.jpg"
-import lib2Img3 from "../public/assets/img63.jpg"
-import festImg from "../public/assets/img22.jpg"
-import festImg2 from "../public/assets/img52.jpg"
-import festImg3 from "../public/assets/img53.jpg"
-import studImg from "../public/assets/img23.jpg"
-import studImg2 from "../public/assets/img57.jpg"
-import studImg3 from "../public/assets/img54.jpg"
-import dontImg from "../public/assets/img24.jpg"
-import dontImg1 from "../public/assets/img59.jpg"
+import lib1Img from "../../public/assets/img51.jpg"
+import lib1Img2 from "../../public/assets/img50.jpg"
+import lib1Img3 from "../../public/assets/img64.jpg"
+import lib2Img from "../../public/assets/img12.jpeg"
+import lib2Img2 from "../../public/assets/img62.jpg"
+import lib2Img3 from "../../public/assets/img63.jpg"
+import festImg from "../../public/assets/img22.jpg"
+import festImg2 from "../../public/assets/img52.jpg"
+import festImg3 from "../../public/assets/img53.jpg"
+import studImg from "../../public/assets/img23.jpg"
+import studImg2 from "../../public/assets/img57.jpg"
+import studImg3 from "../../public/assets/img54.jpg"
+import dontImg from "../../public/assets/img67.jpg"
+import dontImg1 from "../../public/assets/img24.jpg"
+import dontImg2 from "../../public/assets/img59.jpg"
 export const getInvolvedConsts = [
     {
 
@@ -167,8 +168,8 @@ export const projects = [
     {
         id: 1,
         title: "Mekanissa Family Community Library",
-        image: lib1Img, // Replace with actual image URL
-        images: [lib1Img3, lib1Img2],
+        image: lib2Img, // Replace with actual image URL
+        images: [lib2Img3, lib2Img2],
         shortDescription:
             "OfLaD has opened a Family Community Library in Nifas Silk Lafto Subcity, near the Mekanissa and Kore condominium areas. The library serves local children, including those from the Kori Kids project, providing essential educational resources.",
         longDescription:
@@ -176,13 +177,13 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Lideta Subcity Library at Woreda 4 Youth Center",
-        image: lib2Img, // Replace with actual image URL
-        images: [lib2Img3, lib2Img2],
+        title: "Sarbet Family Community Library",
+        image: lib1Img, // Replace with actual image URL
+        images: [lib1Img3, lib1Img2],
         shortDescription:
-            "OfLaD has opened a Family Community Library at Lideta Subcity Woreda 4 Youth Center, providing valuable educational services to youth and children, including students from Tesfa Public School.",
+            "OfLaD has opened a Family Community Library at Sarbet , Lideta Subcity Woreda 4 Youth Center, providing valuable educational services to youth and children, including students from Tesfa Public School.",
         longDescription:
-            "OfLaD’s second library is located at Lideta Subcity’s Woreda 4 Youth Center, a key location offering vital educational support to the local community, particularly youth and children. The library is strategically placed to benefit students from Tesfa Public School, located nearby, by providing access to a diverse collection of books, digital learning tools, and interactive educational programs. This library serves as a hub for personal and academic development, helping students improve literacy, engage in extracurricular activities, and explore new subjects. Additionally, the library hosts various workshops and community programs designed to encourage lifelong learning, critical thinking, and social interaction, empowering students and fostering a sense of belonging within their community."
+            "OfLaD’s second library is located at Sarbet, Lideta Subcity’s Woreda 4 Youth Center, a key location offering vital educational support to the local community, particularly youth and children. The library is strategically placed to benefit students from Tesfa Public School, located nearby, by providing access to a diverse collection of books, digital learning tools, and interactive educational programs. This library serves as a hub for personal and academic development, helping students improve literacy, engage in extracurricular activities, and explore new subjects. Additionally, the library hosts various workshops and community programs designed to encourage lifelong learning, critical thinking, and social interaction, empowering students and fostering a sense of belonging within their community."
     },
     {
         id: 3,
@@ -206,12 +207,17 @@ export const projects = [
     },
     {
         id: 5,
-        title: "School Material Support",
+        title: "Book Donations",
         image: dontImg,
-        images: [dontImg, dontImg1],
+        images: [dontImg1, dontImg2],
         shortDescription:
-            "To bridge the resource gap in schools, OfLaD donates essential learning materials such as books, stationery, and digital tools.",
+            "To bridge the educational resource gap, OfLaD focuses on donating essential books alongside other learning materials such as stationery and digital tools.",
         longDescription:
-            "OfLaD is committed to bridging the educational resource gap by supporting schools with vital learning materials such as books, stationery, and digital tools. Recognizing the immense challenges faced by underprivileged schools, we work collaboratively with a network of partner organizations, individual donors, and passionate volunteers. These partnerships allow us to pool resources, share expertise, and reach a broader spectrum of communities. Our support extends beyond providing physical items—we engage with educators and school administrators to understand their specific needs, ensuring the resources we provide are impactful and tailored to their unique circumstances. We also organize community drives, fundraising campaigns, and donation events to collect high-quality materials, including textbooks, library books, educational software, and essential classroom supplies like notebooks, pens, and art materials. By incorporating digital tools, we aim to introduce students to modern learning methods, helping them stay competitive in an increasingly technology-driven world. Through these efforts, OfLaD not only addresses immediate resource shortages but also fosters a culture of collaboration and shared responsibility for education. Our goal is to create sustainable change, empowering schools to provide a nurturing and equitable environment where every student has the opportunity to thrive academically and develop skills for a brighter future."
+            `OfLaD is committed to addressing the educational resource gap by providing schools with essential books and learning materials. Books play a crucial role in fostering literacy and nurturing a culture of reading. By donating textbooks, library books, and other educational resources, we aim to support underprivileged schools in building well-rounded libraries and improving students' access to learning materials. In addition to books, we provide stationery and digital tools to enhance the learning experience.  
+            
+            To make these donations possible, OfLaD works closely with partner organizations, individual donors, and volunteers. Through community drives, fundraising campaigns, and donation events, we collect high-quality books, educational software, and classroom supplies such as notebooks, pens, and art materials. Our approach is not just about donating physical items, but also collaborating with educators and administrators to understand their unique needs and ensure our support is impactful.  
+    
+            By focusing on books and learning tools, we strive to create sustainable change and promote educational equity. OfLaD believes that by empowering schools with the right resources, we can help students develop the skills and knowledge necessary for a brighter future in an increasingly digital world.`
     }
+
 ];
