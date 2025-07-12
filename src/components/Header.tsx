@@ -36,8 +36,9 @@ const Header = () => {
                     <ul className={`hidden md:flex flex-1 lg:gap-10 md:gap-4 justify-end items-center align-middle flex-wrap p-4 text-[1rem] font-bold ${isScrolled ? "text-gray-700" : "text-white"}`}>
                         <li><a href="#" className="navlink_hover">Home</a></li>
                         <li><a href="#about" className="navlink_hover">Who We Are</a></li>
+                        <li><a href="#events" className="navlink_hover">Events</a></li>
                         <li><a href="#our-efforts" className="navlink_hover">Our Efforts</a></li>
-                        <li><a href="#get-involved" className="navlink_hover">Get involved</a></li>
+                        <li><a href="#get-involved" className="navlink_hover">Get involved</a></li> 
                         <li><a href="#contact-us" className="navlink_hover">Contact us</a></li>
                     </ul>
 
