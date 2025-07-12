@@ -1,6 +1,7 @@
 import About from "./components/About"
 import ContactUs from "./components/ContactUs"
 import DonateSection from "./components/DonateSection"
+import Events from "./components/Events"
 import Footer from "./components/Footer"
 import GetInvolved from "./components/GetInvolved"
 import Header from "./components/Header"
@@ -17,6 +18,7 @@ const App = () => {
       <main className="w-full h-full flex flex-col gap-10 relative">
         <About />
         <OurEfforts />
+        <Events />
         <OurGallery />
         <OurPartners />
         <GetInvolved />
