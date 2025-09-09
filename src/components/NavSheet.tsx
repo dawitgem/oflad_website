@@ -61,6 +61,13 @@ const NavSheet = ({ isOpen, setIsOpen }: SheetProps) => {
                                         Who we are
                                     </a>
                                     <a
+                                        href="#events"
+                                        className="block hover:text-primary transition"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Events
+                                    </a>
+                                    <a
                                         href="#our-efforts"
                                         className="block hover:text-primary transition"
                                         onClick={() => setIsOpen(false)}
