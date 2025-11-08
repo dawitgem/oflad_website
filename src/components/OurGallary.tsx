@@ -17,18 +17,56 @@ import img9 from "../../public/assets/img39.jpg"
 import img10 from "../../public/assets/img40.jpg"
 import img11 from "../../public/assets/img56.jpg"
 
+import img12 from "../../public/assets/newImg12.jpeg"
+import img13 from "../../public/assets/newImg13.jpeg"
+import img14 from "../../public/assets/newImg14.jpeg"
+import img15 from "../../public/assets/newImg15.jpeg"
+import img16 from "../../public/assets/newImg16.jpeg"
+import img17 from "../../public/assets/newImg17.jpeg"
+import img18 from "../../public/assets/newImg18.jpeg"
+import img19 from "../../public/assets/newImg19.jpeg"
+import img20 from "../../public/assets/newImg20.jpeg"
+import img21 from "../../public/assets/newImg21.jpeg"
+import img22 from "../../public/assets/newImg22.jpeg"
+import img23 from "../../public/assets/newImg23.jpeg"
+import img24 from "../../public/assets/newImg24.jpeg"
+import img25 from "../../public/assets/newImg25.jpg"
+import img26 from "../../public/assets/newImg26.jpg"
+import img27 from "../../public/assets/newImg27.jpg"
+import img28 from "../../public/assets/newImg28.jpg"
+import img29 from "../../public/assets/newImg29.jpg"
+
 const galleryImages = [
-    { id: 1, src: img1, alt: 'Image 1', description: '' },
-    { id: 2, src: img2, alt: 'Image 2', description: '' },
-    { id: 3, src: img3, alt: 'Image 3', description: '' },
-    { id: 4, src: img4, alt: 'Image 4', description: '' },
-    { id: 5, src: img5, alt: 'Image 5', description: '' },
-    { id: 6, src: img6, alt: 'Image 6', description: '' },
-    { id: 7, src: img7, alt: 'Image 7', description: '' },
-    { id: 8, src: img8, alt: 'Image 8', description: '' },
-    { id: 9, src: img9, alt: 'Image 9', description: '' },
-    { id: 10, src: img11, alt: 'Image 10', description: '' },
-    { id: 11, src: img10, alt: 'Image 10', description: '' },
+    // { id: 1, src: img1, alt: 'Image 1', description: '' },
+    // { id: 2, src: img2, alt: 'Image 2', description: '' },
+    // { id: 3, src: img3, alt: 'Image 3', description: '' },
+    // { id: 4, src: img4, alt: 'Image 4', description: '' },
+    // { id: 5, src: img5, alt: 'Image 5', description: '' },
+    // { id: 6, src: img6, alt: 'Image 6', description: '' },
+    // { id: 7, src: img7, alt: 'Image 7', description: '' },
+    // { id: 8, src: img8, alt: 'Image 8', description: '' },
+    // { id: 9, src: img9, alt: 'Image 9', description: '' },
+    // { id: 10, src: img11, alt: 'Image 10', description: '' },
+    // { id: 11, src: img10, alt: 'Image 10', description: '' },
+
+    { id: 12, src: img12, alt: 'Image 12', description: '' },
+    { id: 14, src: img14, alt: 'Image 14', description: '' },
+    { id: 15, src: img15, alt: 'Image 15', description: '' },
+    { id: 13, src: img13, alt: 'Image 13', description: '' },
+    { id: 16, src: img16, alt: 'Image 16', description: '' },
+    { id: 17, src: img17, alt: 'Image 17', description: '' },
+    { id: 18, src: img18, alt: 'Image 18', description: '' },
+    { id: 19, src: img19, alt: 'Image 19', description: '' },
+    { id: 20, src: img20, alt: 'Image 20', description: '' },
+    { id: 21, src: img21, alt: 'Image 21', description: '' },
+    { id: 22, src: img22, alt: 'Image 22', description: '' },
+    { id: 23, src: img23, alt: 'Image 23', description: '' },
+    { id: 24, src: img24, alt: 'Image 24', description: '' },
+    { id: 25, src: img25, alt: 'Image 25', description: '' },
+    { id: 26, src: img26, alt: 'Image 26', description: '' },
+    { id: 28, src: img27, alt: 'Image 27', description: '' },
+    { id: 27, src: img28, alt: 'Image 28', description: '' },
+    { id: 29, src: img29, alt: 'Image 29', description: '' },
 ];
 
 const OurGallery = () => {
