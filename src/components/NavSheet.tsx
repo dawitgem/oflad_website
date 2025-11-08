@@ -61,11 +61,11 @@ const NavSheet = ({ isOpen, setIsOpen }: SheetProps) => {
                                         Who we are
                                     </a>
                                     <a
-                                        href="#events"
+                                        href="#trainings"
                                         className="block hover:text-primary transition"
                                         onClick={() => setIsOpen(false)}
                                     >
-                                        Events
+                                        Trainings
                                     </a>
                                     <a
                                         href="#our-efforts"

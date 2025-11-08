@@ -1,11 +1,11 @@
-const Events = () => {
+const Trainings = () => {
 
     return (
-        <div id="events" className="w-full bg-gray-50 py-16 text-center">
+        <div id="trainings" className="w-full bg-gray-50 py-16 text-center">
             <div className="container mx-auto space-y-10 lg:p-16 ">
                 {/* Section Header */}
                 <h2 className="text-4xl font-extrabold text-center text-secondary-dark font-montserrat ">
-                    Events
+                    Trainings
                 </h2>
                 
                 {/* Content Wrapper */}
@@ -21,4 +21,4 @@ const Events = () => {
     );
 };
 
-export default Events;
+export default Trainings;
