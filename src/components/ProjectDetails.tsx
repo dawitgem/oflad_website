@@ -57,17 +57,40 @@ export const ProjectDetail = ({
                                     <DialogTitle className="text-3xl font-extrabold text-secondary-dark text-center ">
                                         {selectedProject?.title}
                                     </DialogTitle>
-                                    <div className="flex md:flex-row flex-col-reverse gap-10 items-start overflow-hidden">
-                                        <p className="md:max-w-[50%] text-gray-600 text-lg ">
-                                            {selectedProject?.longDescription}
-                                        </p>
-                                        <div className="  grid md:grid-cols-1  gap-5">
-                                            <img src={selectedProject?.images[0]} alt="oflad" />
-                                            <img src={selectedProject?.images[1]} alt="" />
 
+                                    {selectedProject?.contents?.map((content: {texts?:string[], img?:string}, index: number) => (
+
+                                        <div key={index} className="flex md:flex-row flex-col-reverse gap-10 items-start overflow-hidden">
+                                            {/* show image for odd index before text */}
+                                            {index % 2 !== 0 && (
+                                                 content && content.img && (
+                                                    <div className=" grid md:max-w-[50%] md:grid-cols-1  gap-5">
+                                                        <img src={content.img} alt={`Oflad-${selectedProject?.title??'title'}-${index}`} />
+                                                    </div>
+                                                )
+                                            )}
+
+                                            {content && (content?.texts?.length??0) > 0 && (
+                                                <div className="md:max-w-[50%]">
+                                                    {content?.texts?.map((text, i) => (
+                                                        <p key={i} className={`text-gray-600 text-lg ${(content?.texts?.length??0) > 1 ? 'mb-4' : ''}`}>
+                                                            {text}
+                                                        </p>))
+                                                    }
+                                                </div>
+                                                )
+                                            }
+                                            {/* show image for odd index after text */}
+                                            {index % 2 === 0 && (
+                                                 content && content.img && (
+                                                    <div className=" grid md:max-w-[50%] md:grid-cols-1  gap-5">
+                                                        <img src={content.img} alt={`Oflad-${selectedProject?.title??'title'}-${index}`} />
+                                                    </div>
+                                                )
+                                            )}
                                         </div>
+                                    ))}
 
-                                    </div>
                                     <div className="mt-6 text-right">
                                         <button
                                             onClick={() => setSelectedProject(null)}

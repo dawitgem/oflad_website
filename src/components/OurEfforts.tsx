@@ -73,7 +73,7 @@ const OurEfforts = () => {
             <div className="p-8 space-y-4 overflow-hidden">
                 <h3 className="text-start text-lg font-extrabold font-montserrat text-secondary-dark">Our Recent Projects</h3>
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 overflow-hidden ">
-                    {projects.map((project, index) => (
+                    {[...projects].reverse().map((project, index) => (
                         <div key={project.id}>
                             <Project openDialog={openDialog} project={project} index={index} />
                         </div>
