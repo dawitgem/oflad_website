@@ -34,6 +34,7 @@ import summerCamp2 from "../../public/assets/summerCamp2.jpeg"
 import summerCamp3 from "../../public/assets/summerCamp3.jpeg"
 import summerCamp4 from "../../public/assets/summerCamp4.jpeg"
 import summerCamp5 from "../../public/assets/summerCamp5.jpeg"
+import summerCampHome from "../../public/assets/newImg26.jpg"
 
 export const getInvolvedConsts = [
     {
@@ -256,8 +257,7 @@ export const projects = [
         {
         id: 6,
         title: "Summer camp",
-        image: lib2Img, // Replace with actual image URL
-        images: [lib2Img3, lib2Img2,dontImg1, dontImg2],
+        image: summerCampHome, // Replace with actual image URL
         shortDescription:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         contents:[
